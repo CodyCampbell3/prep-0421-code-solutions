@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+  /* stylelint-disable block-no-empty */
+  body {
+    font-family: sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 { text-align: center; }
+
+  .container {
+    max-width: 992px;
+    margin: auto;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+  }
+
+  .column {
+    flex-basis: calc(100%/3);
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+  }
+  </style>
+</head>
+<body>
+<h1>Indiana Jones</h1>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <img src="/Users/codycampbell/repos/prep-0421-code-solutions/prep-css-grid-classes/images/temple.jpg" alt="temple">
+      <h3>temple</h3>
+        <p>indiana jones and the temple of doom was created in 1984</p>
+      </div>
+      <div class="column">
+        <img src="/Users/codycampbell/repos/prep-0421-code-solutions/prep-css-grid-classes/images/raiders.jpg" alt="raiders">
+        <h3>raiders</h3>
+        <p>raiders of the lost ark was created 1981</p>
+      </div>
+      <div class="column">
+        <img src="/Users/codycampbell/repos/prep-0421-code-solutions/prep-css-grid-classes/images/crusade.png" alt="crusade">
+        <h3>crusade</h3>
+        <p>indian jones and the last crusade was created in 1989</p>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
